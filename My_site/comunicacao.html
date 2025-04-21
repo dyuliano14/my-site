@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunicação - Dyuliano Magalhães</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      /* ... outros estilos ... */
+    .profile-image {
+      width: 300px; /* Ou o tamanho desejado */
+      height: 300px; /* Ou o tamanho desejado */
+      border-radius: 50%;
+      overflow: hidden;
+      position: fixed; /* Para posicionar na tela */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1; /* Totalmente visível inicialmente */
+      transition: top 1s ease-in-out, left 1s ease-in-out, opacity 1s ease-in-out; /* Transições suaves */
+    z-index: 999;
+  }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-image.animate {
+      top: 60px; /* Posição final no topo */
+      left: calc(100% - 180px); /* Posição final à direita (ajuste o valor conforme o tamanho) */
+      transform: translate(0, 0); /* Remove a translação */
+      opacity: 0.3; /* Esmaecido */
+      width: 150px; /* Metade do tamanho inicial */
+      height: 150px; /* Metade do tamanho inicial */
+    }
+    /* ... outros estilos ... */
+    
+      background-color: rgba(255, 174, 0, 0.932);
+      color: #333;
+    }
+
+    .container-comunicacao {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    nav {
+      width: 120px;
+      background-color:  rgba(43, 43, 43, 0.932);
+      border-radius: 10px;
+      padding: 20px;
+      position: fixed;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #b9b9b9;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+      background-color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 0px;
+      margin-left: 240px; /* Espaço para o menu lateral */
+      margin-right: 240px; /* Espaço para o menu lateral */
+    }
+
+    .section {
+      padding: 40px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    h2, p, h1 {
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-comunicacao">
+    <nav>
+      <ul>
+        <li><a href="#sobre">Minha Jornada</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
+        <li><a href="#portfolio">Portifolio</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+    <div class="profile-image">
+      <img src="assets/images/dyuliano.jpg" alt="Dyuliano Magalhães">
+    </div>
+    <div class="content">
+      <section id="sobre" class="section">
+        <h1>Bem-vindo ao meu lado criativo</h1>
+        
+        <p>Sou Publicitário, com foco em campanhas criativas que geram impacto.</p>
+        
+        <h1>Minha jornada.</h1>
+
+        <p>Em 2000 não havia ENEM e o vestibular era feito pelas universidades e faculdades que o aluno se interessasse, então tentei UFG – Universidade Federal de Goiás eu queria o curso de Engenharia Elétrica.</p>
+        
+        <p>Na primeira fase eu obtive nota para prosseguir para segunda fase, na qual fiquei em vigésimo oitavo, na reserva, nunca me chamaram.</p>
+        
+        <p>Em 2004 veio o ENEM, fiz o exame, então no ano posterior anunciaram o PROUNI me inscrevi e consegui uma bolsa integral para cursar Produção Publicitária e  em 2010 me formei.</p>
+        
+        <p>O ano era 2011 e eu iniciei uma pós-graduação em Telecomunicações na UFG e terminei em 2013, para a época pré TV Digital situação em que as fibras óticas estavam sendo pensadas, os empresários das telecomunicações estavam ensaiando internet fibra até a porta de nossas casas e o 5G estava em desenvolvimento, havia acabado de acontecer o leilão para utilização em todo território nacional.</p>
+        
+        <p>Muita coisa aconteceu de 2013 a 2020 inclusive  me tornei pai e fiz o ENEM novamente, meu objetivo: Transição de carreira, nesse momento eu retornaria a 2000, eu estava determinado a ser um Engenheiro Eletricista, em 2021 eu entrei no IFG – Instituto Federal de Goiás e minha previsão de término é 2026-2.</p>
+      </section>
+
+      <section id="projetos" class="section">
+        <h2>Projetos</h2>
+        <p>Exemplos de seus trabalhos e projetos de comunicação.</p>
+      </section>
+
+      <section id="habilidades" class="section">
+        <h2>Habilidades</h2>
+        <p>Suas principais habilidades em comunicação.</p>
+      </section>
+
+      <section id="contato" class="section">
+        <h2>Contato</h2>
+        <p>Informações para contato.</p>
+      </section>
+
+    </div>
+  </div>
+  <script src="js/scripty.js"></script>
+  <script>
+    window.onload = function() {
+      const profileImage = document.querySelector('.profile-image');
+      if (profileImage) {
+        // Adiciona a classe 'animate' após um pequeno delay para garantir que os estilos iniciais sejam aplicados
+        setTimeout(() => {
+          profileImage.classList.add('animate');
+        }, 100); // Ajuste o delay se necessário
+      }
+    };
+  </script>
+  </body>
+</html>

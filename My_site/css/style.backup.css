@@ -1,0 +1,278 @@
+
+  /* Layout principal */
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  .side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: flex 0.5s ease-in-out;
+    
+  }
+   
+  /* Foto no centro */
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+  }
+ 
+  .engenharia {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+  }    
+  .texto-comunicacao {
+    position: relative; /* Pode ser absolute ou fixed, dependendo do layout */
+    color: #ffffff; /* Cor do texto */
+    font-size: 36px;
+    z-index: 10; /* Fica por cima */
+  }
+  .comunicacao {
+    background-color: rgba(255, 174, 0, 0.932);
+    /*background-color: #f7c957;*/
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Animação ao clicar */
+  .side:hover {
+    flex: 2; /* Aumenta o lado quando o mouse passa */
+  }
+  
+  /* Navegação oculta por padrão */
+  .hidden {
+    display: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f7c957;
+  }
+  
+  section {
+    padding: 50px;
+    height: 100vh;
+  }
+  
+  #introducao {
+    background-color: #f7c957;
+  }
+  
+  #trabalhos {
+    background-color: #ffd7a5;
+  }
+  
+  #impacto {
+    background-color: #ffae85;
+  }
+  
+  #contato {
+    background-color: #ff9970;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeedd; /* Tom vibrante */
+  }
+  
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ffaa88; /* Menu lateral */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  section {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeedd; /* Tom vibrante */
+  }
+  
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ffaa88; /* Menu lateral */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  section {
+    margin-left: 220px;
+    padding: 20px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  section#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  iframe, video {
+    width: 100%;
+    height: auto;
+  }

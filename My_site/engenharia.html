@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engenharia Elétrica - Dyuliano Magalhães</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      /* ... outros estilos ... */
+    .profile-image {
+      width: 300px; /* Ou o tamanho desejado */
+      height: 300px; /* Ou o tamanho desejado */
+      border-radius: 50%;
+      overflow: hidden;
+      position: fixed; /* Para posicionar na tela */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1; /* Totalmente visível inicialmente */
+      transition: top 1s ease-in-out, left 1s ease-in-out, opacity 1s ease-in-out; /* Transições suaves */
+      z-index: 999; /* Para ficar acima de outros elementos inicialmente */
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-image.animate {
+      top: 60px; /* Posição final no topo */
+      left: calc(100% - 180px); /* Posição final à direita (ajuste o valor conforme o tamanho) */
+      transform: translate(0, 0); /* Remove a translação */
+      opacity: 0.3; /* Esmaecido */
+      width: 150px; /* Metade do tamanho inicial */
+      height: 150px; /* Metade do tamanho inicial */
+    }
+    /* ... outros estilos ... */
+ 
+    
+      background-color: #000;
+      color: #fff;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(30, 30, 30, 0.9);
+      padding: 15px 0;
+      z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #f7c957;
+    }
+
+    .container-engenharia {
+      padding-top: 80px; /* Espaço para não sobrepor o menu */
+      padding: 20px;
+    }
+
+    /* Adicione aqui os estilos específicos do conteúdo de Engenharia */
+  </style>
+</head>
+<body>
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Experiência</a></li>
+      <li><a href="#">Contato</a></li>
+      </ul>
+  </nav>
+
+  <div class="container-engenharia">
+    <h1>Página de Engenharia Elétrica</h1>
+    <p>Conteúdo sobre sua experiência e projetos de engenharia.</p>
+    </div>
+
+    <div class="profile-image">
+      <img src="assets/images/dyuliano.jpg" alt="Dyuliano Magalhães">
+    </div>
+
+    <script src="js/scripty.js"></script>
+    
+    <script>
+      window.onload = function() {
+        const profileImage = document.querySelector('.profile-image');
+        if (profileImage) {
+          // Adiciona a classe 'animate' após um pequeno delay para garantir que os estilos iniciais sejam aplicados
+          setTimeout(() => {
+            profileImage.classList.add('animate');
+          }, 100); // Ajuste o delay se necessário
+        }
+      };
+    </script>
+</body>
+</html>
+

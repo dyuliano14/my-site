@@ -1,0 +1,67 @@
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Esconde qualquer barra de rolagem que possa aparecer */
+      width: 100%;
+      height: 100%;
+      display: flex; /* Para o posicionamento dos lados */
+      justify-content: space-between; /* Espaço entre os lados */
+      align-items: center; /* Centraliza verticalmente */
+    }
+  
+    .side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: width 0.5s ease-in-out; /* Transição na largura */
+      color: white;
+      text-decoration: none;
+      height: 100%; /* Ocupa toda a altura da tela */
+      width: 50%; /* Inicialmente cada lado ocupa metade */
+      position: relative; /* Para o z-index do texto */
+      overflow: hidden; /* Garante que a cor não vaze */
+    }
+  
+    .marketing {
+      background-color: #f7c957; /* Laranja para Marketing */
+    }
+  
+    .engenharia {
+      background-color: #000; /* Preto para Engenharia */
+    }
+  
+    .side:hover {
+      width: 60%; /* Expande um pouco ao passar o mouse */
+      transition: width 0.3s ease-in-out;
+    }
+  
+    .side h1 {
+      font-size: 36px;
+      margin: 0;
+      position: relative;
+      z-index: 2; /* Garante que o texto fique acima da cor */
+    }
+  
+    .center {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 1; /* Garante que a foto fique entre os lados */
+    }
+  
+    .center img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute; /* Permite centralizar precisamente */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
